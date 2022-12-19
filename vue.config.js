@@ -1,4 +1,14 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+module.exports = {
+  pluginOptions: {
+    electronBuilder: {
+      builderOptions: {
+        publish: [{
+          provider: 'github',
+          owner: 'jrubiano01',
+          repo: 'example',
+          releaseType: 'draft'
+        }]
+      }
+    }
+  }
+}
