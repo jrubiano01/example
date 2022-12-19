@@ -5,8 +5,7 @@ module.exports = {
         publish: [{
           provider: 'github',
           owner: 'jrubiano01',
-          repo: 'example',
-          releaseType: 'draft'
+          repo: 'example'
         }]
       }
     }
